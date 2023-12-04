@@ -4,7 +4,7 @@
 
 pkgname=('snigdhaos-grub-theme')
 org=eshanizedos
-pkgver=r2.49d1e5e
+pkgver=r2.236fac4
 pkgrel=1
 pkgdesc='Grub Theme For Snigdha OS'
 arch=('any')
