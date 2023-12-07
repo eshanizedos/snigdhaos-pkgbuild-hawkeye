@@ -1,0 +1,43 @@
+
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-fish-settings
+org=eshanizedos
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Snigdha OS Fish Settings"
+arch=(any)
+url="https://github.com/$org/$pkgname"
+license=('GPL')
+depends=('bat'
+	'eza'
+	'expac'
+	'find-the-command-git'
+	'fish'
+	'fish-autopair'
+	'fzf'
+	'snigdhaos-starship-settings'
+	'pkgfile'
+	'tealdeer'
+	'ugrep')
+makedepends=('git')
+source=("snigdhaos-fish-completions-update.service"
+	"config.fish"
+	"snigdhaos-update.fish"
+	"https://raw.githubusercontent.com/franciscolourenco/done/master/conf.d/done.fish")
+sha256sums=('SKIP'
+	'SKIP'
+	'SKIP'
+	'SKIP')
+
+package() {
+	cd "$srcdir" || exit
+	install -D -m644 config.fish "$pkgdir"/etc/skel/.config/fish/config.fish
+	install -Dm0644 snigdhaos-update.fish "$pkgdir/usr/share/fish/vendor_conf.d/snigdhaos-update.fish"
+	install -Dm0644 snigdhaos-fish-completions-update.service "$pkgdir/usr/lib/systemd/user/snigdhaos-fish-completions-update.service"
+	install -D -m644 done.fish "$pkgdir"/etc/skel/.config/fish/conf.d/done.fish
+
+	# Workaround for mcfly complaining about missing history
+	mkdir -p "$pkgdir"/etc/skel/.local/share/fish
+	touch "$pkgdir"/etc/skel/.local/share/fish/fish_history
+}

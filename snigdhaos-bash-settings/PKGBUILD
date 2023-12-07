@@ -1,0 +1,25 @@
+
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-bash-settings
+org=eshanizedos
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Snigdha OS Bash"
+arch=(any)
+url="https://github.com/$org/$pkgname"
+license=('GPL')
+depends=('bash'
+	'bash-completion'
+	'find-the-command-git'
+	'snigdhaos-starship-settings'
+	'ugrep')
+makedepends=('git')
+source=('bashrc' 'bashrc-setup.desktop')
+sha256sums=('SKIP'
+	'SKIP')
+
+package() {
+	install -D -m644 bashrc "$pkgdir/etc/skel/.snigdhaos_bashrc"
+	install -D -m644 bashrc-setup.desktop "$pkgdir/etc/skel/.config/autostart/bashrc-setup.desktop"
+}
