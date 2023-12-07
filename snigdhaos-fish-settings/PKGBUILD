@@ -23,10 +23,8 @@ depends=('bat'
 makedepends=('git')
 source=("snigdhaos-fish-completions-update.service"
 	"config.fish"
-	"snigdhaos-update.fish"
 	"https://raw.githubusercontent.com/franciscolourenco/done/master/conf.d/done.fish")
 sha256sums=('SKIP'
-	'SKIP'
 	'SKIP'
 	'SKIP')
 
