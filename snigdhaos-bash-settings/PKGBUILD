@@ -12,7 +12,7 @@ license=('GPL')
 depends=('bash'
 	'bash-completion'
 	'find-the-command-git'
-	'snigdhaos-starship-settings'
+	'snigdhaos-starship'
 	'ugrep')
 makedepends=('git')
 source=('bashrc' 'bashrc-setup.desktop')

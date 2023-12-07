@@ -1,7 +1,6 @@
 
 # Maintainer: Eshan Roy <src.eshan@gmail.com>
 
-
 pkgname=('snigdhaos-grub-theme')
 org=eshanizedos
 pkgver=r2.236fac4

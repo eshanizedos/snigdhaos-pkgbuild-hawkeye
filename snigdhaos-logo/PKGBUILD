@@ -2,8 +2,8 @@
 # Maintainer: Eshan Roy <src.eshan@gmail.com>
 
 pkgname=snigdhaos-logo
-pkgdesc="Snigdha OS Logo"
 org=eshanizedos
+pkgdesc="Snigdha OS Logo"
 pkgver=r2.fbe9608
 pkgrel=1
 arch=('any')

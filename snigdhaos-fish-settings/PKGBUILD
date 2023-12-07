@@ -16,7 +16,7 @@ depends=('bat'
 	'fish'
 	'fish-autopair'
 	'fzf'
-	'snigdhaos-starship-settings'
+	'snigdhaos-starship'
 	'pkgfile'
 	'tealdeer'
 	'ugrep')
