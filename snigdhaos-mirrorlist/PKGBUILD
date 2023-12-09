@@ -11,6 +11,7 @@ license=("GPL")
 url="https://github.com/$org/$pkgname"
 backup=('etc/pacman.d/snigdhaos-mirrorlist')
 source=("snigdhaos-mirrorlist")
+sha256sums=('SKIP')
 
 package() {
   mkdir -p "$pkgdir/etc/pacman.d"
