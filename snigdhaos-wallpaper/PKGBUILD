@@ -3,7 +3,7 @@
 
 pkgname=snigdhaos-wallpaper
 org=eshanizedos
-pkgver=r4.4e04501
+pkgver=r3.eeb09e5
 pkgrel=1
 pkgdesc="Snigdha OS Wallpaper Collection"
 arch=('any')
@@ -24,5 +24,5 @@ package() {
 	install -d "${pkgdir}/usr/share/backgrounds/$pkgname"
 	cp -r src/$pkgname/* "${pkgdir}/usr/share/backgrounds/$pkgname"
 	install -d "${pkgdir}/usr/share/gnome-background-properties"
-	cp -r "src/$pkgname/*.xml" "${pkgdir}/usr/share/gnome-background-properties/snigdhaos-wallpaper.xml"
+	cp -r "src/$pkgname/snigdhaos-wallpaper.xml" "${pkgdir}/usr/share/gnome-background-properties/snigdhaos-wallpaper.xml"
 }
