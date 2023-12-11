@@ -9,7 +9,7 @@ arch=('any')
 url="https://github.com/$org/$pkgname"
 license=('GPL3')
 makedepends=('coreutils')
-source=("$pkgname-$pkgver.tar.gz::$url/-/archive/$pkgver/$pkgname-$pkgver.tar.gz")
+source=(${pkgname}::"git+https://github.com/${org}/${_pkgname}.git")
 sha256sums=('SKIP')
 pkgdesc='Snigdha OS Gnome Settings!'
 install=$pkgname.install
@@ -18,7 +18,7 @@ conflicts=($pkgname)
 
 package() {
 	install -d "$pkgdir"/etc
-	cp -rf "$srcdir"/$pkgname-$pkgver/etc "$pkgdir"
+	cp -rf "$srcdir"/$pkgname/etc "$pkgdir"
 	depends=('snigdhaos-wallpaper'
 		'snigdhaos-common-hawkeye'
 		'gnome-themes-extra'
