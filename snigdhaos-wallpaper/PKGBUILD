@@ -3,7 +3,7 @@
 
 pkgname=snigdhaos-wallpaper
 org=eshanizedos
-pkgver=r3.eeb09e5
+pkgver=r4.c3815ec
 pkgrel=1
 pkgdesc="Snigdha OS Wallpaper Collection"
 arch=('any')
