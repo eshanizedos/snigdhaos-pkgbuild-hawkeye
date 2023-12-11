@@ -1,0 +1,26 @@
+
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-keyring
+org=eshanizedos
+pkgver=1.0.0
+pkgrel=1
+pkgdesc='Snigdha OS GPG Keys'
+arch=('any')
+url='https://github.com/$org/$pkgname'
+license=('GPL')
+install="${pkgname}.install"
+source=('Makefile'
+        'snigdhaos.gpg'
+        'snigdhaos-revoked'
+        'snigdhaos-trusted')
+validpgpkeys=('7ECBBC409E60EC61A6F6415F400361A4CDAEBBB3') # eshan_roy
+sha256sums=('SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP')
+
+package() {
+	cd "${srcdir}"
+	make PREFIX=/usr DESTDIR=${pkgdir} install
+}
