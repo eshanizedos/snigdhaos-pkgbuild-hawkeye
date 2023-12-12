@@ -10,8 +10,8 @@ arch=('any')
 url="https://github.com/$org/$pkgname"
 license=("GPL")
 depends=('brave-bin' 'gnome-keyring' 'profile-sync-daemon-brave')
-source=("git+$url.git"
-        "psd.conf")
+source=("psd.conf"
+        "$pkgname.tar.gz")
 sha256sums=('SKIP'
         'SKIP')
 

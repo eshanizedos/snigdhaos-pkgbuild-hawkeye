@@ -1,0 +1,6 @@
+2023/12/11-21:19:29.554 4 Reusing MANIFEST /home/snigdha/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2023/12/11-21:19:29.557 4 Recovering log #3
+2023/12/11-21:19:29.570 4 Reusing old log /home/snigdha/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000003.log 
+2023/12/11-21:21:17.641 4 Level-0 table #5: started
+2023/12/11-21:21:17.646 4 Level-0 table #5: 52732 bytes OK
+2023/12/11-21:21:17.651 4 Delete type=0 #3
